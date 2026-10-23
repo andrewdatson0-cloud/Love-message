@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Darla Sona Ritha 💗</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #a52c68;
+  text-align: center;
+  background: linear-gradient(135deg, #ffe0ee, #ffc2dd, #fff0f7);
+  overflow-x: hidden;
+}
+
+header {
+  padding: 35px 15px 20px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  color: #d63384;
+  font-size: clamp(2rem, 6vw, 3.6rem);
+  text-shadow: 2px 3px white;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+}
+
+.card {
+  width: min(900px, 92%);
+  margin: 0 auto 40px;
+  padding: 25px;
+  border: 3px solid white;
+  border-radius: 30px;
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 15px 40px #d6338430;
+}
+
+.scene {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: linear-gradient(#f8c7e0, #fff2f8 75%, #edbad4);
+}
+
+.cloud {
+  position: absolute;
+  top: 35px;
+  left: 15%;
+  font-size: 3rem;
+}
+
+.cloud.two {
+  left: auto;
+  right: 12%;
+  top: 65px;
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  height: 55px;
+  width: 100%;
+  background: #e9a9cc;
+  border-radius: 50% 50% 0 0;
+}
+
+.teddy {
+  position: absolute;
+  bottom: 35px;
+  font-size: clamp(4rem, 14vw, 7rem);
+  z-index: 2;
+}
+
+.boy {
+  left: 7%;
+  animation: run 0.65s infinite alternate ease-in-out;
+}
+
+.girl {
+  right: 7%;
+  animation: shy 1.8s infinite alternate ease-in-out;
+}
+
+@keyframes run {
+  from { transform: translateY(0) rotate(-8deg); }
+  to { transform: translate(30px,-18px) rotate(8deg); }
+}
+
+@keyframes shy {
+  from { transform: rotate(-3deg); }
+  to { transform: translateY(-7px) rotate(3deg); }
+}
+
+.name {
+  position: absolute;
+  bottom: 8px;
+  z-index: 3;
+  padding: 8px 12px;
+  border-radius: 30px;
+  background: #ffffffd9;
+  font-size: clamp(.65rem, 2vw, .9rem);
+  font-weight: bold;
+}
+
+.boy-name { left: 3%; }
+.girl-name { right: 3%; }
+
+.quote {
+  margin: 28px auto;
+  font-family: Georgia, serif;
+  font-size: clamp(1.3rem, 4vw, 2rem);
+  color: #c02b73;
+  line-height: 1.5;
+}
+
+.message {
+  line-height: 1.9;
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+button {
+  border: none;
+  padding: 14px 22px;
+  margin: 8px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+button:hover {
+  transform: scale(1.06);
+}
+
+.primary {
+  background: #f04f9a;
+  color: white;
+}
+
+.secondary {
+  background: white;
+  color: #c02b73;
+  border: 2px solid #ffb4d5;
+}
+
+#loveNote {
+  display: none;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background: #fff0f7;
+  border: 2px dashed #f18bb9;
+  border-radius: 20px;
+  line-height: 1.8;
+}
+
+footer {
+  padding: 10px 15px 30px;
+  color: #a64c79;
+}
+
+/* Floating hearts */
+.heart {
+  position: fixed;
+  bottom: -40px;
+  z-index: 10;
+  pointer-events: none;
+  animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-115vh) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .card { padding: 12px; }
+  .scene { height: 260px; }
+  .boy { left: 0; }
+  .girl { right: 0; }
+  .name { padding: 6px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <p>💗 A tiny world made just for you 💗</p>
+  <h1>For My Darla Sona Ritha 🧸</h1>
+  <p class="subtitle">
+    One teddy, one heart, and a million reasons to smile 💕
+  </p>
+</header>
+
+<main class="card">
+
+  <div class="scene">
+    <div class="cloud">☁️</div>
+    <div class="cloud two">☁️</div>
+
+    <div class="teddy boy" aria-label="Darlo, the running teddy">
+      🧸
+    </div>
+
+    <div class="teddy girl" aria-label="Darla, the cute teddy">
+      🧸🎀
+    </div>
+
+    <div class="ground"></div>
+
+    <div class="name boy-name">
+      Darlo Sona Jwalesh 💌
+    </div>
+
+    <div class="name girl-name">
+      Darla Sona Ritha 🌸
+    </div>
+  </div>
+
+  <div class="quote">
+    "No matter how far I run,<br>
+    my heart always runs to you." 💗
+  </div>
+
+  <div class="message">
+    My sweetest <strong>Darla Sona Ritha</strong> 💖,<br><br>
+
+    Look who's running towards you!
+    It's your Darlo Sona Jwalesh, carrying the biggest teddy hug
+    and all the love in his little heart. 🧸🌹<br><br>
+
+    If I have made you sad, my love, I am truly sorry.
+    You are so special to me, and your smile means the world
+    to me. I want to make things right and remind you how
+    deeply you are loved. 🥺💕<br><br>
+
+    So, my cute teddy princess, can I have a chance to make
+    you smile again? 💗
+  </div>
+
+  <button class="primary" id="hugButton">
+    Send me a teddy hug 🧸
+  </button>
+
+  <button class="secondary" id="noteButton">
+    Open your love note 💌
+  </button>
+
+  <div id="loveNote">
+    <h2>For My Forever Person 💖</h2>
+
+    My Darla Sona Ritha,<br>
+    if I could give you one thing, it would be the ability
+    to see yourself through my eyes. Then you would know
+    just how precious you are to me. 💗<br><br>
+
+    You are my happiness, my peace, and my favourite person.
+    I may not always be perfect, but I want to keep learning
+    how to love you better, every single day. 🧸💕<br><br>
+
+    <strong>Forever your teddy,</strong><br>
+    Darlo Sona Jwalesh ❤️
+  </div>
+
+</main>
+
+<footer>
+  Made with endless love 💗<br>
+  Darlo Sona Jwalesh ❤️ Darla Sona Ritha
+</footer>
+
+<script>
+const hearts = ["💗", "💕", "💖", "💘", "💞", "♡"];
+
+function createHeart(x = Math.random() * window.innerWidth) {
+  const heart = document.createElement("span");
+
+  heart.className = "heart";
+  heart.textContent =
+    hearts[Math.floor(Math.random() * hearts.length)];
+
+  heart.style.left = x + "px";
+  heart.style.fontSize = (14 + Math.random() * 22) + "px";
+  heart.style.animationDuration = (3 + Math.random() * 3) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 6500);
+}
+
+// Hearts keep floating across the page.
+setInterval(() => createHeart(), 400);
+
+// Clicking the page creates a little burst of hearts.
+document.addEventListener("click", (event) => {
+  for (let i = 0; i < 6; i++) {
+    setTimeout(() => {
+      createHeart(
+        event.clientX + (Math.random() * 100 - 50)
+      );
+    }, i * 80);
+  }
+});
+
+// Teddy hug button.
+document.getElementById("hugButton").addEventListener("click", () => {
+  for (let i = 0; i < 20; i++) {
+    setTimeout(() => createHeart(), i * 90);
+  }
+
+  document.getElementById("hugButton").textContent =
+    "Biggest teddy hug sent! 🧸💞";
+});
+
+// Show or hide the surprise love letter.
+document.getElementById("noteButton").addEventListener("click", () => {
+  const note = document.getElementById("loveNote");
+  const button = document.getElementById("noteButton");
+
+  const isOpen = note.style.display === "block";
+
+  note.style.display = isOpen ? "none" : "block";
+
+  button.textContent = isOpen
+    ? "Open your love note 💌"
+    : "Close your love note 💌";
+
+  if (!isOpen) {
+    note.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+});
+</script>
+
+</body>
+</html>
